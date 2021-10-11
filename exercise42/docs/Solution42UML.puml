@@ -1,0 +1,12 @@
+@startuml
+
+class Solution42{
+'attributes
+    - names: List<String> data
+
+'methods
+    -readData() : List<String>
+    -printData(List<String> names)
+}
+
+@enduml
