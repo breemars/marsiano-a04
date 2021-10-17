@@ -2,7 +2,7 @@
 
 class Solution41{
 'attributes
-    - names: List<String> names
+    - names: List<String>
 
 'methods
     -readData() : List<String>

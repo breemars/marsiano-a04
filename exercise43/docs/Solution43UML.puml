@@ -1,0 +1,15 @@
+@startuml
+
+class Solution43{
+'attributes
+    - name: String
+    - author: String
+    - js: String
+    - css: String
+
+'methods
+    -createDirectory(String dirName, String folderName)
+    -createHTML(String name, String author)
+}
+
+@enduml
