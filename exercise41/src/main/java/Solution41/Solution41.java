@@ -47,7 +47,7 @@ public class Solution41 {
     }
 
     //Write new data from list to file
-    private static void writeData(List<String> names) throws IOException {
+    public static void writeData(List<String> names) throws IOException {
 
         try (FileWriter writer = new FileWriter("data//exercise41_output.txt")) {
             writer.write("Total of " + names.size() + " names\n-----------------\n");
