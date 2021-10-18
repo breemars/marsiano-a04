@@ -5,8 +5,8 @@ class Solution41{
     - names: List<String>
 
 'methods
-    -readData() : List<String>
-    -writeData(List<String> names)
+    +readData() : List<String>
+    +writeData(List<String> names)
 }
 
 @enduml

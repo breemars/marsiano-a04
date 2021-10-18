@@ -9,7 +9,7 @@ import java.util.List;
 class Solution42Test {
 
     @Test
-    void readingData() throws IOException {
+    void readingDataFromFile() throws IOException {
         List<String> data = Solution42.readData();
         assertEquals("Ling", data.get(0));
     }

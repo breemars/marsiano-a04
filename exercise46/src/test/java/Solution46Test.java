@@ -1,32 +1,23 @@
-import Solution45.Solution45;
+import Solution46.Solution46;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.Map;
 
 class Solution46Test {
-    List<String> data;
+    Map<String, Integer> map;
 
     @BeforeEach @Test
-    void testReadingInData() throws IOException {
-        data = Solution45.readData("utilize", "use");
-        assertEquals("One should never use the word \"use\" in writing. Use \"use\" instead.", data.get(0));
-
+    void countingWordsTest() throws IOException {
+        map = Solution46.countWords();
+        assertEquals(7, map.get("badger"));
     }
 
     @Test
-    void testCreateObjectList() throws IOException {
-        Solution45.writeData(data, "output");
-
-        File file = new File("data//output.txt");
-        Scanner reader = new Scanner(file);
-
-        assertEquals("One should never use the word \"use\" in writing. Use \"use\" instead.", reader.nextLine());
-        reader.close();
+    void searchForWordInMap() {
+        assertTrue(Solution46.wordInMap("snake", map));
     }
 }

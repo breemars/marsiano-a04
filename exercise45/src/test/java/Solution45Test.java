@@ -13,14 +13,14 @@ class Solution45Test {
     List<String> data;
 
     @BeforeEach @Test
-    void testReadingInData() throws IOException {
+    void testReadingInDataFromFile() throws IOException {
         data = Solution45.readData("utilize", "use");
         assertEquals("One should never use the word \"use\" in writing. Use \"use\" instead.", data.get(0));
 
     }
 
     @Test
-    void testCreateObjectList() throws IOException {
+    void testWritingDataToFile() throws IOException {
         Solution45.writeData(data, "output");
 
         File file = new File("data//output.txt");

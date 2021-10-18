@@ -33,7 +33,6 @@ public class Solution42 {
                 data.addAll(Arrays.asList(values));
             }
         }
-
         return data;
     }
 

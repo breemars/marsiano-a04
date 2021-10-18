@@ -5,7 +5,7 @@ class Solution42{
     - data: List<String>
 
 'methods
-    -readData() : List<String>
+    +readData() : List<String>
     -printData(List<String> names)
 }
 

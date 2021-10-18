@@ -8,8 +8,8 @@ class Solution43{
     - css: String
 
 'methods
-    -createDirectory(String dirName, String folderName)
-    -createHTML(String name, String author)
+    +createDirectory(String dirName, String folderName)
+    +createHTML(String name, String author)
 }
 
 @enduml
