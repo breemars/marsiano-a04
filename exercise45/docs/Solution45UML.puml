@@ -3,25 +3,12 @@
 class Solution45{
 'attributes
     - data : List<String>
-    - productsList : List<Products>
-    - name: String
+    - output: String
 
 'methods
-    +objectList(List<String> data) : List<Products>
-    +searchProduct(List<Products> productsList, String name) : boolean
-    +readData() : List<String>
+    +readData(String search, String replace) : List<String>
+    +writeData(List<String> data, String output)
 }
 
-class Products{
-'attributes
-    - name : String
-    - price : double
-    - quantity : int
-
-'methods
-    +getName() : String
-    +getPrice() : Double
-    +getQuantity() : Int
-}
 
 @enduml

@@ -1,33 +1,32 @@
-import Solution44.Solution44;
-import Solution44.Products;
+import Solution45.Solution45;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.List;
+import java.util.Scanner;
 
 class Solution45Test {
     List<String> data;
-    List<Products> products;
 
     @BeforeEach @Test
     void testReadingInData() throws IOException {
-        data = Solution44.readData();
-        assertEquals("    {\"name\": \"Widget\", \"price\": 25.00, \"quantity\": 5 }", data.get(0));
+        data = Solution45.readData("utilize", "use");
+        assertEquals("One should never use the word \"use\" in writing. Use \"use\" instead.", data.get(0));
 
-    }
-
-    @BeforeEach @Test
-    void testCreateObjectList() {
-       products = Solution44.objectList(data);
-       assertEquals("Widget", products.get(0).getName());
     }
 
     @Test
-    void testSearchingForProduct() {
-        assertTrue(Solution44.searchProduct(products, "Doodad"));
-    }
+    void testCreateObjectList() throws IOException {
+        Solution45.writeData(data, "output");
 
+        File file = new File("data//output.txt");
+        Scanner reader = new Scanner(file);
+
+        assertEquals("One should never use the word \"use\" in writing. Use \"use\" instead.", reader.nextLine());
+        reader.close();
+    }
 }
