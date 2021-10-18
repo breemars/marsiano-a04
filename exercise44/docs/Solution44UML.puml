@@ -1,0 +1,27 @@
+@startuml
+
+class Solution44{
+'attributes
+    - data : List<String>
+    - productsList : List<Products>
+    - name: String
+
+'methods
+    +objectList(List<String> data) : List<Products>
+    +searchProduct(List<Products> productsList, String name) : boolean
+    +readData() : List<String>
+}
+
+class Products{
+'attributes
+    - name : String
+    - price : double
+    - quantity : int
+
+'methods
+    +getName() : String
+    +getPrice() : Double
+    +getQuantity() : Int
+}
+
+@enduml
