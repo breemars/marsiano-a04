@@ -1,0 +1,14 @@
+@startuml
+
+class Solution45{
+'attributes
+    - data : List<String>
+    - output: String
+
+'methods
+    +readData(String search, String replace) : List<String>
+    +writeData(List<String> data, String output)
+}
+
+
+@enduml

@@ -27,7 +27,7 @@ public class Solution45 {
         //Create new file
         List<String> data = readData("utilize", "use");
         writeData(data, output);
-        
+
     }
 
     //Switch the words and read data from file into list
